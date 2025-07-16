@@ -25,7 +25,7 @@ export default defineConfig({
   // أضف هذا الجزء الجديد هنا:
   build: {
     rollupOptions: {
-      external: ['@vueuse/motion']
+      // external: ['@vueuse/motion']
     }
   }
 })
