@@ -22,10 +22,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  // أضف هذا الجزء الجديد هنا:
-  build: {
-    rollupOptions: {
-      external: ['@vueuse/motion']
-    }
-  }
+  optimizeDeps: {
+    include: ['@vueuse/motion'],
+  },
 })
